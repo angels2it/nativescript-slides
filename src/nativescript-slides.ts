@@ -273,6 +273,8 @@ export class SlideContainer extends AbsoluteLayout {
     this.showRightSlide(this.currentPanel).then(() => {
       this.setupPanel(this.currentPanel.right);
       this.triggerChangeEventRightToLeft();
+    }).catch(error => {
+      console.log('error while play animation')
     });
   }
   public previousSlide(): void {
@@ -287,6 +289,8 @@ export class SlideContainer extends AbsoluteLayout {
     this.showLeftSlide(this.currentPanel).then(() => {
       this.setupPanel(this.currentPanel.left);
       this.triggerChangeEventLeftToRight();
+    }).catch(error => {
+      console.log('error while play animation')
     });
   }
 
