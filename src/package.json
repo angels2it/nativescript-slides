@@ -62,10 +62,7 @@
   "bugs": {
     "url": "https://github.com/JoshDSommer/nativescript-slides/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/JoshDSommer/nativescript-slides/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "homepage": "https://github.com/JoshDSommer/nativescript-slides",
   "readmeFilename": "README.md",
   "devDependencies": {
