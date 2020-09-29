@@ -1,14 +1,14 @@
 require('nativescript-dom');
-import { Screen } from "@nativescript/core";
-import * as app from 'application';
-import * as AnimationModule from 'ui/animation';
-import { Button } from 'ui/button';
-import { View } from 'ui/core/view';
-import { AnimationCurve } from 'ui/enums';
-import * as gestures from 'ui/gestures';
-import { Label } from 'ui/label';
-import { AbsoluteLayout } from 'ui/layouts/absolute-layout';
-import { StackLayout } from 'ui/layouts/stack-layout';
+import * as app from '@nativescript/core/application';
+import { Screen } from "@nativescript/core/platform";
+import * as AnimationModule from '@nativescript/core/ui/animation';
+import { Button } from '@nativescript/core/ui/button';
+import { View } from '@nativescript/core/ui/core/view';
+import { AnimationCurve } from '@nativescript/core/ui/enums';
+import * as gestures from '@nativescript/core/ui/gestures';
+import { Label } from '@nativescript/core/ui/label';
+import { AbsoluteLayout } from '@nativescript/core/ui/layouts/absolute-layout';
+import { StackLayout } from '@nativescript/core/ui/layouts/stack-layout';
 
 declare const android: any;
 declare const com: any;
