@@ -1,17 +1,14 @@
 require('nativescript-dom');
-import * as app from 'application';
-import * as Platform from 'platform';
-import * as utils from 'tns-core-modules/utils/utils';
-import { AbsoluteLayout } from 'ui/layouts/absolute-layout';
-import { StackLayout } from 'ui/layouts/stack-layout';
-import { View } from 'ui/core/view';
-import { Button } from 'ui/button';
-import { Label } from 'ui/label';
-import * as AnimationModule from 'ui/animation';
-import * as gestures from 'ui/gestures';
-import { AnimationCurve, Orientation } from 'ui/enums';
-import { Color } from 'color';
-import { Image } from 'ui/image';
+import * as app from '@nativescript/core/application';
+import { Screen } from "@nativescript/core/platform";
+import * as AnimationModule from '@nativescript/core/ui/animation';
+import { Button } from '@nativescript/core/ui/button';
+import { View } from '@nativescript/core/ui/core/view';
+import { AnimationCurve } from '@nativescript/core/ui/enums';
+import * as gestures from '@nativescript/core/ui/gestures';
+import { Label } from '@nativescript/core/ui/label';
+import { AbsoluteLayout } from '@nativescript/core/ui/layouts/absolute-layout';
+import { StackLayout } from '@nativescript/core/ui/layouts/stack-layout';
 
 declare const android: any;
 declare const com: any;
@@ -26,7 +23,7 @@ if (app.android) {
   LayoutParams = {};
 }
 
-export class Slide extends StackLayout {}
+export class Slide extends StackLayout { }
 
 enum direction {
   none,
@@ -121,7 +118,7 @@ export class SlideContainer extends AbsoluteLayout {
 
   get pageWidth() {
     if (!this.slideWidth) {
-      return Platform.screen.mainScreen.widthDIPs;
+      return Screen.mainScreen.widthDIPs;
     }
     return +this.slideWidth;
   }

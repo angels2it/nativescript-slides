@@ -1,6 +1,6 @@
-import { AbsoluteLayout } from 'ui/layouts/absolute-layout';
-import { StackLayout } from 'ui/layouts/stack-layout';
-import { Label } from 'ui/label';
+import { Label } from '@nativescript/core/ui/label';
+import { AbsoluteLayout } from '@nativescript/core/ui/layouts/absolute-layout';
+import { StackLayout } from '@nativescript/core/ui/layouts/stack-layout';
 export declare class Slide extends StackLayout {
 }
 export interface ISlideMap {
